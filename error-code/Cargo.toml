@@ -6,3 +6,10 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+error-code-derive = { workspace = true }
+
+[dev-dependencies]
+anyhow = { workspace = true }
+error-code = { workspace = true }
+http = { workspace = true }
+thiserror = { workspace = true }
