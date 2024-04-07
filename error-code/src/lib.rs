@@ -34,7 +34,7 @@ where
         let mut hasher = DefaultHasher::new();
         server_msg.hash(&mut hasher);
         let hash = hasher.finish();
-        let hash = URL_SAFE_NO_PAD.encode(&hash.to_be_bytes());
+        let hash = URL_SAFE_NO_PAD.encode(hash.to_be_bytes());
 
         Self {
             app_code: T::from_str(app_code).expect("Can not parse app_code"),
